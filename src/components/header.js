@@ -2,7 +2,7 @@ import React from 'react';
 import './header.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import logoImage from './../assets/Logo.png';
+import logoImage from './../assets/blacklogo.png';
 
 function Header() {
   const navigate = useNavigate();

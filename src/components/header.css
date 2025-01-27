@@ -7,16 +7,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #035aa6;
+  background-color: transparent;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
 }
 
 .nav-link {
-  color: #FFFFFF !important; /* White nav link text */
+  color: black !important; /* White nav link text */
 }
 
 .navbar .nav-link:hover {
