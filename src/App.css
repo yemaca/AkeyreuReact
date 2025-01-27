@@ -61,21 +61,25 @@ html, body {
 }
 
 .main-content {
-  margin-top: 50px; /* Adjust based on header height */
+  margin-top: 70px; /* Adjust based on header height */
   padding: 20px;
   background-color: #FFFFFF; /* Main background color */
   color: #000000;
 }
 
-/* Card */
 .card {
   text-align: center;
   background-color: #FFFFFF; /* Close to main background color */
   margin: 20px auto;
   padding: 20px;
-  max-width: 80%;
+  max-width: 85%;
+  height: 550px;
+  display: flex; /* Flexbox to center content */
+  flex-direction: column; /* Content flows vertically */
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
   border-radius: 10px;
-  box-shadow: 0 0 30px #035aa6; /* drop shadow */
+  box-shadow: 0 0 30px #035aa6; /* Drop shadow */
   margin-bottom: 100px;
   font-size: calc(10px + 2vmin);
 }
@@ -90,13 +94,55 @@ html, body {
 
 /* Image */
 .image {
+  width: 100%; /* Allow the image to shrink based on container */
+  max-width: 300px; /* Limit the maximum size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column; /* Stack content vertically */
+  }
+  .image {
+    margin-right: 0; /* Remove horizontal margin */
+    margin-bottom: 20px; /* Add vertical margin */
+  }
+}
+
+/* Card */
+/* .card {
+  text-align: center;
+  background-color: #FFFFFF; /* Close to main background color 
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #035aa6; /* drop shadow 
+  margin-bottom: 100px;
+  font-size: calc(10px + 2vmin);
+} */
+
+/* Content */
+/* .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* For responsiveness 
+} */
+
+/* Image */
+/* .image {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   margin-right: 20px;
   object-fit: cover;
   flex-shrink: 0;
-}
+} */
 
 /* Text Content */
 .text-content {
