@@ -1,47 +1,76 @@
-/* Header.css */
-
 /* Header container */
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: transparent;
+  background-color: #FFFFFF;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 100;
-  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+}
+
+/* Header line (added as a pseudo-element) */
+.navbar::after {
+  content: '';
+  display: block;
+  width: 20%; /* Adjust width as needed */
+  height: 1px; /* Thickness of the line */
+  background-color: black; /* Line color */
+  margin: 0 auto; /* Center the line */
+  position: absolute;
+  bottom: .0; /* Position at the bottom of the header */
+  left: 0;
+  right: 0;
 }
 
 .nav-link {
-  color: black !important; /* White nav link text */
+  color: black !important;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
 }
 
-.navbar .nav-link:hover {
-  color: #0596F2 !important;/* Highlight on hover */
+.nav-link:hover {
+  color: #035aa6 !important;
 }
 
 /* Logo styles */
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-
-.logo-link {
-  display: inline-block;
-}
-
 .logo-image {
   width: 150px;
   height: auto;
 }
 
+/* Hamburger menu styles */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 4px 0;
+}
+
 /* Navigation styles */
 .nav {
+  display: none;
+}
+
+.nav.open {
   display: flex;
-  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0);
 }
 
 .nav-list {
@@ -51,53 +80,11 @@
   padding: 0;
 }
 
-.nav-item {
+.nav-list .nav-item {
   margin-left: 20px;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: #333333;
-  font-size: 16px;
-}
-
-/* Hamburger menu styles */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #333333;
-  margin: 4px 0;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-  .nav.open {
-    display: flex;
-    position: absolute;
-    top: 60px; /* Adjust based on header height */
-    right: 20px;
-    background-color: #ffffff;
-    padding: 10px;
-    flex-direction: column;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  .nav-list {
-    flex-direction: column;
-  }
-  .nav-item {
-    margin: 10px 0;
-  }
-  .hamburger {
-    display: flex;
-  }
+.nav.open .nav-item {
+  margin: 10px 0;
+  display: flex;
 }

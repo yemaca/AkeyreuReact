@@ -61,7 +61,7 @@ html, body {
 }
 
 .main-content {
-  margin-top: 50px; /* Adjust based on header height */
+  margin-top: 70px; /* Adjust based on header height */
   padding: 20px;
   background-color: #FFFFFF; /* Main background color */
   color: #000000;
@@ -72,7 +72,12 @@ html, body {
   background-color: #FFFFFF; /* Close to main background color */
   margin: 20px auto;
   padding: 20px;
-  max-width: 80%;
+  max-width: 85%;
+  height: 550px;
+  display: flex; /* Flexbox to center content */
+  flex-direction: column; /* Content flows vertically */
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
   border-radius: 10px;
   box-shadow: 0 0 30px #035aa6; /* Drop shadow */
   margin-bottom: 100px;
