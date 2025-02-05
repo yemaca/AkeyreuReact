@@ -73,7 +73,7 @@ html, body {
   margin: 20px auto;
   padding: 20px;
   max-width: 85%;
-  height: 550px;
+  height: 600px;
   display: flex; /* Flexbox to center content */
   flex-direction: column; /* Content flows vertically */
   justify-content: center; /* Vertically center content */
@@ -95,7 +95,7 @@ html, body {
 /* Image */
 .image {
   width: 100%; /* Allow the image to shrink based on container */
-  max-width: 300px; /* Limit the maximum size */
+  max-width: 400px; /* Limit the maximum size */
   height: auto; /* Maintain aspect ratio */
   border-radius: 50%;
   margin-right: 20px;

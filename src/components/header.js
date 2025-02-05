@@ -58,6 +58,7 @@ const Header = () => {
           src={logoImage}
           alt="Logo"
           className="logo-image"
+          onClick={(e) => handleNavClick(e, 'home')}
         />
       </Navbar.Brand>
 

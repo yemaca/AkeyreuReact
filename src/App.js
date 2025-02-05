@@ -70,25 +70,25 @@ function App() {
                   <div class="value-item">
                     <h3>Inspiration</h3>
                     <p>
-                      Igniting the spark of innovation, Akeyreu illuminates the path to mental wellness and cognitive wellbeing.
+                      Ignite the spark of innovation, lighting up the path to mental wellness and cognitive wellbeing for you.
                     </p>
                   </div>
                   <div class="value-item">
                     <h3>Transparency</h3>
                     <p>
-                      Clear Minds, Clear Mission: Akeyreu's commitment to transparency in mental wellness.
+                      Akeyreu's commitment to transparency ensures a clear mission in mental wellness, where every step is shared with trust and clarity.
                     </p>
                   </div>
                   <div class="value-item">
                     <h3>Integrity</h3>
                     <p>
-                      Integrity is the core of our neural tech—trusted, ethical, and always human-centered.
+                      At the heart of our neural tech lies integrity-trusted, ethical, and always centered around you, our fellow human.
                     </p>
                   </div>
                   <div class="value-item">
                     <h3>Accessibility</h3>
                     <p>
-                      Opening new horizons in mental wellness, Akeyreu makes advanced technology accessible to all.
+                      Akeyreu is here to open new horizons in mental wellness, making advanced technology accessible to everyone, because everyone deserves to explore this enriching journey.
                     </p>
                   </div>
                 </div>
@@ -102,21 +102,23 @@ function App() {
                   <div class="product-item">
                     <h3>nAura</h3>
                     <p>
-                      Your Gateway to Restorative Sleep: nAura uses biomedical data to understand your sleep patterns and uses AI to provide personalized recommendations.
+                      nAura warmly welcomes you to a world where understanding your sleep is as comforting as the rest itself. By using your biomedical data, nAura comprehends your unique sleep patterns and leverages Al to offer personalized recommendations tailored just for you.
                       <br />
-                      - Track and analyze your sleep quality with precision, giving you detailed reports and actionable insights.
                       <br />
-                      - Easy integration with existing smart home devices.
+                      <b>Track and analyze your sleep quality with precision:</b><br />Get cozy with detailed reports and actionable insights that are there to guide you to better nights.
+                      <br />
+                      <b>Easy integration with existing smart home devices:</b><br />We make it simple to blend nAura into your home, ensuring your journey to restorative sleep is smooth and seamless.
                     </p>
                   </div>
                   <div class="product-item">
                     <h3>Vza</h3>
                     <p>
-                      Empowers a proactive CBT approach to mental wellness.
+                      Vza is here to support your mental wellness with a proactive CBT approach, wrapping you in a comforting embrace of technology.
                       <br />
-                      - Utilizes real-time biometric data to adapt its suggestions for mental exercises and relaxation techniques.
                       <br />
-                      - Monitor your cognitive wellness journey through personalized reports and milestones.
+                      <b>Utilizes real-time biometric data:</b><br />We adapt our suggestions for mental exercises and relaxation techniques to fit your moment-to-moment needs, like a friend who knows exactly what you need when you need it.
+                      <br />
+                      <b> Monitor your cognitive wellness journey:</b><br />Through personalized reports and milestones, we help you see how far you've come, celebrating every step of your journey with you.
                     </p>
                   </div>
                 </div>
@@ -125,7 +127,7 @@ function App() {
               {/*Sign Up Section*/}
               <div class="card" id="learn-more">
                 <h2 class="section-title">Want to find out more?</h2>
-                <p>Sign up for our newsletter and take control of your mental wellbeing!</p>
+                <p>Join our community by signing up for our newsletter and take the first step in control of your mental wellbeing!</p>
                 <a href="http://eepurl.com/iMvslY" target="_blank">
                   <button type="submit" class="button" name="submit">Subscribe Here!</button>
                 </a>
