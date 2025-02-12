@@ -11,6 +11,30 @@ import readingImage from './assets/readingImage.png';
 import friendsImage from './assets/HappyHumans.png';
 
 function App() {
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+
+    // Navigate to the main page first
+    if (window.location.pathname !== '/') {
+      navigate('/', { replace: false }); // Navigate to the main page
+    }
+
+    // Scroll to the target section after navigation
+    setTimeout(() => {
+      const target = document.getElementById(targetId);
+
+      if (target) {
+        const yOffset = -100; // Offset for the height of the navbar
+        const yPosition = target.getBoundingClientRect().top + window.scrollY + yOffset;
+
+        window.scrollTo({
+          top: yPosition,
+          behavior: 'smooth', // Smooth scrolling
+        });
+      }
+    }, 100); // Small delay to ensure navigation completes
+  };
+
   return (
     <Router>
       <Helmet>
@@ -37,7 +61,7 @@ function App() {
                       mental wellness journey. <br /><br />Don't be fooled by the name; it's quite easy to pronounce. When you are searching for
                       wellness solutions, remember <strong>"Ah-Key-Row"</strong>! Your key to neurological wellbeing.
                       <br /><br />
-                      <a href="#learn-more" className="button">Subscribe Now!</a>
+                      <a href="/#learn-more" className="button" onClick={(e) => handleNavClick(e, 'learn-more')}>Subscribe Now!</a>
                     </p>
                   </div>
                 </div>
