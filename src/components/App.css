@@ -2,7 +2,7 @@
 .dark-blue { color: #074073; }
 .golden-rod { color: #debf5f; }
 .sky-blue { color: #035aa6; }
-.electric-blue { color: #0596F2; }
+electric-blue { color: #0596F2; }
 
 /* Global Styles */
 html, body {
@@ -28,9 +28,9 @@ html, body {
   text-align: center;
   background-color: #FFFFFF;
   margin: 20px auto;
-  padding: 20px;
-  max-width: 85%;
-  height: auto; /* Change to auto for better responsiveness */
+  padding: 30px;
+  width: 85%; /* Ensures consistent width */
+  min-height: 600px; /* Forces cards to remain large */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,9 +38,19 @@ html, body {
   border-radius: 10px;
   box-shadow: 0 0 30px #035aa6;
   margin-bottom: 100px;
-  font-size: clamp(18px, 4vmin, 26px); /* Scales text properly */
-  overflow: hidden; /* Prevents content from overflowing */
+  font-size: clamp(22px, 3vmin, 35px);
+  overflow: hidden;
   word-wrap: break-word;
+  flex-grow: 1; /* Ensures all cards take up equal space */
+}
+
+/* Ensure all cards are equal height in a row */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* Ensures all cards in a row are the same height */
+  gap: 20px; /* Adds spacing between cards */
 }
 
 /* Content */
@@ -66,6 +76,9 @@ html, body {
 .text-content {
   flex: 1;
   text-align: center;
+  /* font-size: clamp(18px, 2.5vmin, 24px); */
+  line-height: 1.5;
+  max-width: 80%;
 }
 
 /* Section Title */
@@ -129,7 +142,17 @@ html, body {
 }
 
 /* Responsive Fixes */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column; /* Stack cards on smaller screens */
+  }
+
+  .card {
+    width: 100%; /* Make cards take full width */
+    min-height: auto; /* Allow height to adjust when screen is small */
+    padding: 10px; /* Reduce padding for small screens */
+  }
+
   .content {
     flex-direction: column; /* Stack vertically */
     align-items: center;
@@ -138,10 +161,6 @@ html, body {
   .image {
     margin-right: 0;
     margin-bottom: 20px;
-  }
-
-  .card {
-    padding: 10px; /* Reduce padding for small screens */
   }
 
   .value-item, .product-item {
