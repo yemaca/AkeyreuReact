@@ -93,6 +93,11 @@ const Header = () => {
             </a>
           </li>
           <li className="nav-item">
+            <a href="/#socials" className="nav-link" onClick={(e) => handleNavClick(e, 'socials')}>
+              Socials
+            </a>
+          </li>
+          <li className="nav-item">
             <a href="/#learn-more" className="nav-link" onClick={(e) => handleNavClick(e, 'learn-more')}>
               Learn More
             </a>

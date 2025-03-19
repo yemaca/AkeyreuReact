@@ -9,6 +9,9 @@ import Blog from './components/Blog';
 import Podcast from './components/Podcast';
 import readingImage from './assets/readingImage.png';
 import friendsImage from './assets/HappyHumans.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faBlog, faPodcast } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const handleNavClick = (e, targetId) => {
@@ -148,6 +151,19 @@ function App() {
                 </div>
               </div>
 
+              {/* Socials Section */}
+              <div class="card" id="socials">
+                <h2 class="section-title">Check us out on social media!</h2>
+                <div class="socials-section">
+                  <a href="/blog" target="_blank" rel="noopener noreferrer" className="social-icon"><FontAwesomeIcon icon={faBlog} /></a>
+                  {/*href="https://ajr2.github.io/RoamingMinds/" target="_blank" rel="noopener noreferrer"*/}
+                  <a className="social-icon disabled-icon"><FontAwesomeIcon icon={faPodcast} /></a>
+                  <a href="https://instagram.com/roaming_minds_pod/" target="_blank" rel="noopener noreferrer" className="social-icon"><FontAwesomeIcon icon={faInstagram} /></a>
+                  <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="social-icon"><FontAwesomeIcon icon={faXTwitter} /></a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon"><FontAwesomeIcon icon={faLinkedin} /></a>
+                </div>
+              </div>
+
               {/*Sign Up Section*/}
               <div class="card" id="learn-more">
                 <h2 class="section-title">Want to find out more?</h2>
@@ -165,7 +181,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/podcast" element={<Podcast />} />
       </Routes>
-    </Router>
+    </Router >
   );
 }
 
